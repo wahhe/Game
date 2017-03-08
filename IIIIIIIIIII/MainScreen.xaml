@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IIIIIIIIIII.MainScreen" >
+	<ContentPage.Content>
+		<StackLayout>
+			<Grid x:Name="controlGrid" RowSpacing="1" ColumnSpacing="1" >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label x:Name="WinLabel" Grid.Row="0" Grid.Column="0" 
+                Text="W: 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
+                FontSize="30" BackgroundColor="Green" TextColor = "White" TranslationY ="20"/>
+
+			<Label x:Name="LossLabel" Grid.Row="0" Grid.Column="1" 
+                Text="L: 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
+                FontSize="30" BackgroundColor="Green" TextColor = "White" TranslationY ="20"/>
+
+			<Label x:Name="TieLabel" Grid.Row="0" Grid.Column="2" 
+                Text="T: 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
+                FontSize="30" BackgroundColor="Green" TextColor = "White" TranslationY ="20"/>
+
+			<Label x:Name="outcomeLabel" Grid.Row="1" Grid.Column="1" TranslationX ="10" TranslationY="50" Font="50" Text="hello" TextColor="Red"/>
+				
+            <Button x:Name="rockButton" Grid.Row="1" Grid.Column ="0" 
+                Image="Rock.png" Clicked="rockButton_Clicked" />
+
+			<Button x:Name="paperButton" Grid.Row="1" Grid.Column ="1" 
+                Image="paper.png" Clicked="paperButton_Clicked" />
+
+			<Button x:Name="scissorsButton" Grid.Row="1" Grid.Column ="2" 
+                Image="scissors.png" Clicked="scissorsButton_Clicked" />
+
+			<Image x:Name="tbg" Grid.Row="2" Grid.Column ="1" 
+				Source="Tbg.png" Scale="2" />
+
+			<Image x:Name="playerImage" Grid.Row="3" Grid.Column ="0" />
+			<Image x:Name="cpuImage" Grid.Row="3" Grid.Column ="2" />
+				
+        </Grid>    
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
