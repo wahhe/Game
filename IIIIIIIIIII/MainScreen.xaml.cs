@@ -108,8 +108,8 @@ namespace IIIIIIIIIII
 			scissorsButton.IsVisible = false;
 
 
-			playerChoice = "rock";
-			playerImage.Source = "Rock.png";
+			playerChoice = "paper";
+			playerImage.Source = "paper.png";
 			DependencyService.Get<IIIIIIIIIIIIIIII.IAudio>().PlayAudioFile("choicepop.wav");
 			await Task.Delay(1000);
 
@@ -140,7 +140,7 @@ namespace IIIIIIIIIII
 				tie++;
 				TieLabel.Text = "T: " + tie;
 			}
-			else if (cpuChoice == "paper")
+			else if (cpuChoice == "scissors")
 			{
 				outcomeLabel.Text = "YOU LOSE";
 				lose++;
@@ -180,8 +180,8 @@ namespace IIIIIIIIIII
 			paperButton.IsVisible = false;
 			scissorsButton.IsVisible = false;
 
-			playerChoice = "rock";
-			playerImage.Source = "Rock.png";
+			playerChoice = "scissors";
+			playerImage.Source = "scissors.png";
 			DependencyService.Get<IIIIIIIIIIIIIIII.IAudio>().PlayAudioFile("choicepop.wav");
 			await Task.Delay(1000);
 
@@ -212,7 +212,7 @@ namespace IIIIIIIIIII
 				tie++;
 				TieLabel.Text = "T: " + tie;
 			}
-			else if (cpuChoice == "paper")
+			else if (cpuChoice == "rock")
 			{
 				outcomeLabel.Text = "YOU LOSE";
 				lose++;

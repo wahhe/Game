@@ -29,7 +29,7 @@
                 Text="T: 0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
                 FontSize="30" BackgroundColor="Green" TextColor = "White" TranslationY ="20"/>
 
-			<Label x:Name="outcomeLabel" Grid.Row="1" Grid.Column="1" TranslationX ="10" TranslationY="50" Font="50" Text="hello" TextColor="Red"/>
+			<Label x:Name="outcomeLabel" Grid.Row="1" Grid.Column="1" TranslationX ="5" TranslationY="50" Font="50" Text="hello" TextColor="Red"/>
 				
             <Button x:Name="rockButton" Grid.Row="1" Grid.Column ="0" 
                 Image="Rock.png" Clicked="rockButton_Clicked" />
